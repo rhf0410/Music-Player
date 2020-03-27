@@ -1,0 +1,122 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".UserMainActivity">
+
+    <RelativeLayout
+        android:id="@+id/user_login_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        
+        <com.example.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/user_image"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@drawable/ic_launcher"
+            app:border_width="2dp"
+            app:border_color="#ccc"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"/>
+        
+    </RelativeLayout>
+    
+    <TableLayout
+        android:id="@+id/user_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/user_login_image"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="6dp">
+        
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+            
+            <TextView
+                android:id="@+id/imput_user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:padding="8dp"
+                android:text="@string/username_login" />
+        
+            <EditText
+                android:id="@+id/user_name_value"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/imput_user_name"
+                android:hint="@string/hidden_username"
+                android:layout_centerVertical="true"/>
+            
+        </TableRow>
+        
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+            
+            <TextView
+                android:id="@+id/imput_user_password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/password_login" 
+                android:padding="8dp"
+                android:layout_centerVertical="true"/>
+
+            <EditText
+                android:id="@+id/user_password_value"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hidden_password" 
+                android:layout_toRightOf="@id/imput_user_password"
+                android:layout_centerVertical="true"
+                android:inputType="textPassword"/>
+            
+        </TableRow>
+        
+    </TableLayout>
+    
+    <LinearLayout
+        android:id="@+id/user_operating"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/user_name"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="12dp"
+        android:weightSum="3">
+        
+        <Button
+            android:id="@+id/user_log_in_operating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/login" />
+        
+        <Button
+            android:id="@+id/user_password_forgetting_operating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/password_forgetting"
+            android:layout_weight="0.9"/>
+        
+        <Button
+            android:id="@+id/user_register_operating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/register"
+            android:layout_weight="1"/>
+        
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+    
+    <TableLayout
+        android:id="@+id/display1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+        
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical">
+            
+            <com.example.circleimageview.ImageButton_define
+                android:id="@+id/display_latest_play"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="centerInside"
+                android:background="#ffffff"
+                android:src="@drawable/recent"
+                android:text="@string/latest_play"
+                android:layout_weight="1"/>
+            
+            <com.example.circleimageview.ImageButton_define
+                android:id="@+id/display_by_artist"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="centerInside"
+                android:src="@drawable/man"
+                android:background="#ffffff"
+                android:text="@string/by_artist"
+                android:layout_weight="1"/>
+            
+            <com.example.circleimageview.ImageButton_define
+                android:id="@+id/display_by_song"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="centerInside"
+                android:src="@drawable/music"
+                android:background="#ffffff"
+                android:text="@string/by_song"
+                android:layout_weight="1"/>
+            
+            <com.example.circleimageview.ImageButton_define
+                android:id="@+id/display_treasure"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="centerInside"
+                android:src="@drawable/nokeep"
+                android:background="#ffffff"
+                android:text="@string/treasure"
+                android:layout_weight="1"/>
+            
+        </TableRow>
+        
+    </TableLayout>
+
+</RelativeLayout>

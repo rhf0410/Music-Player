@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="questions">
+        <item>你的初中是</item>
+        <item>你最喜爱的明星是</item>
+        <item>你最喜欢的运动是</item>
+        <item>你最喜爱的足球队是</item>
+        <item>你最喜爱的篮球队是</item>
+        <item>你的初恋女友的名字</item>
+    </string-array>
+</resources>
